@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutankamón - El Legado Eterno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --oro: #c5a021;
+            --oro-brillante: #f7e08a;
+            --negro-profundo: #050505;
+            --azul-egipcio: #002366;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--negro-profundo);
+            color: #e0e0e0;
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Fondo Decorativo */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/black-paper.png');
+            opacity: 0.5; z-index: -1;
+        }
+
+        .main-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 40px;
+            border: 1px solid rgba(197, 160, 33, 0.3);
+            background: rgba(10, 10, 10, 0.9);
+            box-shadow: 0 0 50px rgba(0,0,0,1);
+            position: relative;
+        }
+
+        /* Marco Dorado de Detalle */
+        .main-container::before {
+            content: "";
+            position: absolute;
+            top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid var(--oro);
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        header { text-align: center; margin-bottom: 40px; }
+        
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 4.5rem;
+            color: var(--oro);
+            letter-spacing: 8px;
+            text-shadow: 0 0 15px rgba(197, 160, 33, 0.4);
+            margin-bottom: 10px;
+        }
+
+        /* CONTENEDOR DE ANIMACIÓN - Siguiendo el cuadro del boceto */
+        .animation-frame {
+            width: 100%;
+            max-width: 850px;
+            height: 480px;
+            margin: 0 auto 40px;
+            border: 4px solid var(--oro);
+            position: relative;
+            background: #000;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(197, 160, 33, 0.2);
+        }
+
+        .animation-frame video, .animation-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .intro-text {
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: 1.35rem;
+            text-align: justify;
+            color: #d1d1d1;
+            column-count: 1;
+        }
+
+        .intro-text p { margin-bottom: 25px; }
+
+        /* NAVEGACIÓN - Botones impactantes */
+        .nav-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .btn-egypt {
+            position: relative;
+            padding: 15px 45px;
+            font-family: 'Cinzel', serif;
+            background: transparent;
+            color: var(--oro);
+            border: 2px solid var(--oro);
+            cursor: pointer;
+            overflow: hidden;
+            transition: 0.5s;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-egypt:hover {
+            color: #000;
+            background: var(--oro);
+            box-shadow: 0 0 25px var(--oro);
+            transform: scale(1.05);
+        }
+
+        /* Decoración de esquinas */
+        .corner {
+            position: absolute;
+            width: 30px; height: 30px;
+            border: 2px solid var(--oro);
+        }
+        .top-left { top: 0; left: 0; border-right: none; border-bottom: none; }
+        .bottom-right { bottom: 0; right: 0; border-left: none; border-top: none; }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="corner top-left"></div>
+    <div class="corner bottom-right"></div>
+
+    <header>
+        <h1>TUTANKAMÓN</h1>
+        <p style="color: var(--oro-brillante); letter-spacing: 3px;">EL JOVEN REY DE EGIPTO</p>
+    </header>
+
+    <div class="animation-frame">
+        <video src="generated-video-bccd06ea-976d-40a4-8143-4865cf31ee7c (1).mp4" autoplay loop muted playsinline>
+            <source src="GNE4TSPAJEXUFBQTCGY2V55SDA.avif" type="image/avif">
+            <source src="video_tutankamon.mp4" type="video/mp4">
+            <img src="tutankamón.jpg" alt="Tutankamón">
+
+        </video>
+    </div>
+
+    <div class="intro-text">
+        <p>Tutankamón es un joven faraón que representa el misterio, la grandeza y la historia del Antiguo Egipto. A través de su legado, nos conecta con una civilización llena de sabiduría, arte y poder, mostrando cómo incluso un reinado breve puede dejar una huella eterna en el mundo.</p>
+        
+        <p>Su nombre sigue despertando curiosidad y admiración, recordándonos la importancia de la cultura, la tradición y el pasado que aún vive entre nosotros. Tutankamón destaca por el impacto histórico de su reinado y por el extraordinario descubrimiento de su tumba, considerada una de las más importantes de la arqueología. Sus tesoros revelan la riqueza cultural, artística y espiritual del Antiguo Egipto, consolidando su legado como símbolo de una era fascinante.</p>
+    </div>
+
+    <div class="nav-section">
+        <a href="biografia.html" class="btn-egypt">BIOGRAFÍA</a>
+        <a href="logros.html" class="btn-egypt">LOGROS</a>
+    </div>
+</div>
+
+<script>
+    // Pequeña interacción de entrada
+    window.addEventListener('load', () => {
+        document.querySelector('.main-container').style.opacity = '0';
+        setTimeout(() => {
+            document.querySelector('.main-container').style.transition = 'opacity 2s';
+            document.querySelector('.main-container').style.opacity = '1';
+        }, 100);
+    });
+</script>
+
+</body>
+</html>

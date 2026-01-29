@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Logros del Reinado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { background: #0a0a0a; color: #fff; font-family: 'Segoe UI', sans-serif; padding: 40px; }
+        
+        .header-title { text-align: center; margin-bottom: 60px; }
+        .header-title h1 { font-family: 'Cinzel'; font-size: 3.5rem; color: #c5a021; text-shadow: 0 0 20px rgba(197, 160, 33, 0.5); }
+        .header-title p { color: #888; font-style: italic; font-size: 1.2rem; }
+
+        .logros-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .logro-card {
+            background: #151515;
+            border: 1px solid #333;
+            padding: 30px;
+            border-radius: 4px;
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .logro-card:hover {
+            border-color: #c5a021;
+            background: #1a1a1a;
+            transform: translateY(-10px);
+        }
+
+        /* Espacio para imagen según boceto */
+        .logro-img {
+            width: 100%;
+            height: 220px;
+            background: #000;
+            border: 2px solid #c5a021;
+            overflow: hidden;
+        }
+
+        .logro-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: 0.5s; }
+        .logro-card:hover img { opacity: 1; transform: scale(1.1); }
+
+        h3 { font-family: 'Cinzel'; color: #c5a021; font-size: 1.4rem; margin: 0; }
+        p { color: #ccc; line-height: 1.7; text-align: justify; }
+
+        .footer { text-align: center; margin-top: 60px; }
+        .btn-nav {
+            padding: 15px 40px;
+            background: #c5a021;
+            color: #000;
+            font-family: 'Cinzel';
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-title">
+    <h1>LOGROS DEL FARAÓN</h1>
+    <p>A pesar de su juventud, Tutankamón es un gobernante muy activo.</p>
+</div>
+
+<div class="logros-container">
+    <div class="logro-card">
+        <div class="logro-img"><img src="unnamed.jpg" alt="Antiguos Dioses"></div>
+        <h3>1. La vuelta a los antiguos dioses</h3>
+        <p>Tutankamón decide terminar con el culto exclusivo al sol (Atón) que impuso su padre. Él reabre los templos de Amón y de todos los demás dioses tradicionales, permitiendo que la gente vuelva a practicar su fe de siempre.</p>
+    </div>
+
+    <div class="logro-card">
+        <div class="logro-img"><img src="GNE4TSPAJEXUFBQTCGY2V55SDA.avif" alt="Capital Histórica"></div>
+        <h3>2. El regreso a la capital histórica</h3>
+        <p>El faraón abandona la ciudad desértica de Amarna y traslada de nuevo la capital a Tebas. Con este movimiento, busca que el gobierno esté más cerca del pueblo y de los centros espirituales más importantes del país.</p>
+    </div>
+
+    <div class="logro-card">
+        <div class="logro-img"><img src="ChatGPT Image 15 ene 2026, 11_22_18 a.m..png" alt="Monumentos"></div>
+        <h3>3. La reconstrucción de monumentos</h3>
+        <p>El joven rey dedica gran parte de su tiempo y riqueza a reparar estatuas y santuarios que fueron dañados o abandonados. Sus arquitectos trabajan sin descanso en lugares como Karnak para que el arte egipcio brille con su antiguo esplendor.</p>
+    </div>
+
+    <div class="logro-card">
+        <div class="logro-img"><img src="tutankamón.jpg" alt="Fronteras"></div>
+        <h3>4. La estabilidad de las fronteras</h3>
+        <p>Aunque no busca grandes guerras, Tutankamón fortalece el ejército y asegura las fronteras en Nubia y Siria. Gracias a esto, los comerciantes pueden viajar seguros y la economía de Egipto empieza a recuperarse después de años de crisis.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="index.html" class="btn-nav">REGRESAR AL INICIO</a>
+</div>
+
+</body>
+</html>
